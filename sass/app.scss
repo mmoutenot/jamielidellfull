@@ -1,0 +1,124 @@
+// Your custom settings file to override Foundation defaults
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// ----------------------------------------
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "compass/css3";
+// @import "foundation/settings";
+// @import "foundation/functions/all";
+
+// Control which mixins you have access too
+
+// @import "foundation/mixins/clearfix";
+// @import "foundation/mixins/css-triangle";
+// @import "foundation/mixins/font-size";
+
+// Must include next two for semantic grid to work
+
+// @import "foundation/mixins/respond-to";
+// @import "foundation/mixins/semantic-grid";
+
+// @import "modular-scale";
+// @import "foundation/common/globals";
+
+// Must include the grid for any responsiveness
+
+// @import "foundation/components/grid";
+
+// Control which common styles get compiled
+
+// @import "foundation/common/typography";
+// @import "foundation/common/forms";
+
+// Control which components you get if customizing
+
+// @import "foundation/components/modules/buttons";
+// @import "foundation/components/modules/tabs";
+// @import "foundation/components/modules/ui";
+// @import "foundation/components/modules/topbar";
+// @import "foundation/components/modules/navbar";
+// @import "foundation/components/modules/orbit";
+// @import "foundation/components/modules/reveal";
+// @import "foundation/components/modules/offcanvas";
+
+// Media Queries Overrides
+// @import "foundation/components/modules/mqueries";
+
+.pagerow {
+  @extend .row;
+  width:100%;
+}
+
+#mainVideo {
+  text-align:center;
+  position:fixed;
+  background-clip: border-box;
+  background-color: #323232;
+  top: 0;
+  z-index: 0;
+}
+
+#page {
+  position:relative;
+  margin-top:720px;
+  background-image:-webkit-radial-gradient(rgba(0, 0, 0, .1) 1px, #F1F1F1 1px);
+  // background-color:#F1F1F1;
+  background-attachment:scroll;
+  background-size:8px 8px;
+  background-z-index:1;
+  box-shadow:0px 0px 10px #f1f1f1;
+  z-index:2;
+}
+
+#title {
+  margin-bottom:30px;
+
+  #head {
+    width:90px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  #right {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
+
+#tourDates {
+  .month {
+    font-size:larger;
+    font-family:"Futura Medium", Futura, Arial, serif;
+    color:#111;
+    text-align:left;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li{
+    text-align:left;
+    white-space:nowrap;
+  }
+
+  .ticket {
+    color:#ff3366;
+  }
+
+  .ticket:hover{
+    color:#cccccc;
+  }
+
+}
+
