@@ -82,6 +82,7 @@
 
   font-family:"Futura Condensed Medium", Futura, Arial, serif;
   text-transform:uppercase;
+  text-shadow: black 0.1em 0.1em 0.1em;
 
   img {
     @extend .hide-for-small;
@@ -93,6 +94,7 @@
   #wireframe {
     width: 60%;
     margin-top: 20px;
+    margin-left: 80px;
   }
   #plain, #color {
     width:45%;
@@ -180,7 +182,6 @@ h1, h2, h3, h4, h5 {
 #tourDates {
 
   margin-left: 30px;
-
   .month {
     font-size:larger;
     text-align:left;
@@ -193,6 +194,7 @@ h1, h2, h3, h4, h5 {
   ul li{
     text-align:left;
     white-space:nowrap;
+
   }
 
   .ticket {
