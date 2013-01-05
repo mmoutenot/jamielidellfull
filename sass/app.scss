@@ -8,9 +8,9 @@
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
 
-// @import "compass/css3";
-// @import "foundation/settings";
-// @import "foundation/functions/all";
+@import "compass/css3";
+@import "foundation/settings";
+@import "foundation/functions/all";
 
 // Control which mixins you have access too
 
@@ -55,35 +55,77 @@
 }
 
 #mainVideo {
-  text-align:center;
-  position:fixed;
-  background-clip: border-box;
-  background-color: #323232;
-  top: 0;
-  z-index: 0;
+  // text-align:center;
+  // position:fixed;
+  // background-clip: border-box;
+  // background-color: #000;
+  // top: 0;
+  // z-index: 0;
 }
 
 #page {
   position:relative;
-  margin-top:720px;
-  background-image:-webkit-radial-gradient(rgba(0, 0, 0, .1) 1px, #F1F1F1 1px);
+  margin-top:780px;
+  background-image:-webkit-radial-gradient(rgba(10, 10, 10, .1) 1.9px, #111 1px);
+  background-image:radial-gradient(circle at center center , rgba(10, 10, 10, 0.1) 0%, rgb(10, 10, 10) 20%);
   // background-color:#F1F1F1;
   background-attachment:scroll;
   background-size:8px 8px;
   background-z-index:1;
   box-shadow:0px 0px 10px #f1f1f1;
   z-index:2;
+  color:#ddd;
+  padding-top:40px;
+}
+
+#content {
+
+  font-family:"Futura Condensed Medium", Futura, Arial, serif;
+  text-transform:uppercase;
+
+  img {
+    @extend .hide-for-small;
+    position:absolute;
+    width:95%;
+    text-align:center;
+  }
+
+  #wireframe {
+    width: 60%;
+    margin-top: 20px;
+  }
+  #plain, #color {
+    width:45%;
+    margin-top: 280px;
+  }
+  #color { margin-left:50%; }
+
+  .sixWithLeftBorder {
+    @extend .six;
+    border-left-color: #969;
+    border-left-style: solid;
+    border-left-width: 6px;
+    border-bottom-color: #969;
+    border-bottom-style: solid;
+    border-bottom-width: 6px;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family:"Futura Condensed Medium", Futura, Arial, serif;
+  color: #eee;
 }
 
 #title {
-  margin-bottom:30px;
+  margin-bottom:40px;
+  cursor:pointer;
 
-  #head {
-    width:90px;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-  }
+  // #head {
+  //   width:90px;
+  //   display:block;
+  //   margin-left:auto;
+  //   margin-right:auto;
+  // }
 
   #right {
     -moz-transform: scaleX(-1);
@@ -95,11 +137,52 @@
   }
 }
 
+#preorder {
+
+  padding-bottom:20px;
+
+  #preorderItem {
+    color: #ff3333;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 20px;
+  }
+
+  ul li{
+    @extend h3;
+    text-align:left;
+    white-space:nowrap;
+    padding-top:30px;
+  }
+}
+
+#social {
+
+  margin-top: 20px;
+  text-align: center;
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li{
+    text-align:left;
+    white-space:nowrap;
+    margin-left: 20px;
+    display: inline;
+    font-size:1.3em;
+  }
+}
+
+
 #tourDates {
+
+  margin-left: 30px;
+
   .month {
     font-size:larger;
-    font-family:"Futura Medium", Futura, Arial, serif;
-    color:#111;
     text-align:left;
   }
 
@@ -122,3 +205,16 @@
 
 }
 
+#contact {
+  padding-bottom:20px;
+
+  ul {
+    list-style-type: none;
+    margin-left: 20px;
+  }
+
+  ul li{
+    text-align:left;
+    white-space:nowrap;
+  }
+}

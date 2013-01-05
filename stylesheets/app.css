@@ -122,7 +122,7 @@ figure {
 
 /* Base Type Styles Using Modular Scale ---------------------- */
 /* line 3, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, #preorder ul li, h4, h5, h6, pre, form, p, blockquote, th, td {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -152,7 +152,7 @@ aside p {
 }
 
 /* line 15, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, #preorder ul li, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 14px;
 }
 /* line 24, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+h1 small, h2 small, h3 small, #preorder ul li small, h4 small, h5 small, h6 small {
   font-size: 60%;
   color: #6f6f6f;
   line-height: 0;
@@ -180,7 +180,7 @@ h2 {
 }
 
 /* line 29, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-h3 {
+h3, #preorder ul li {
   font-size: 27px;
 }
 
@@ -414,13 +414,13 @@ abbr {
 }
 
   /* line 98, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-  p, h2, h3 {
+  p, h2, h3, #preorder ul li {
     orphans: 3;
     widows: 3;
   }
 
   /* line 99, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-  h2, h3 {
+  h2, h3, #preorder ul li {
     page-break-after: avoid;
   }
 
@@ -966,7 +966,7 @@ form.custom .custom.disabled {
 }
 
 /* line 23, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/components/_grid.scss */
-.six, .row .six, .pagerow .six {
+.six, .row .six, .pagerow .six, #content .sixWithLeftBorder {
   width: 50%;
 }
 
@@ -3084,6 +3084,8 @@ div.orbit, div.orbit-wrapper {
 .joyride-tip-guide h1,
 .joyride-tip-guide h2,
 .joyride-tip-guide h3,
+.joyride-tip-guide #preorder ul li,
+#preorder ul .joyride-tip-guide li,
 .joyride-tip-guide h4,
 .joyride-tip-guide h5,
 .joyride-tip-guide h6 {
@@ -3919,7 +3921,7 @@ ul.accordion > li > div.title {
   transition: 0.15s background linear;
 }
 /* line 106, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_ui.scss */
-ul.accordion > li > div.title h1, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5 {
+ul.accordion > li > div.title h1, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, #preorder ul.accordion > li > div.title li, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5 {
   margin: 0;
 }
 /* line 107, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_ui.scss */
@@ -4480,7 +4482,7 @@ div.progress.round .meter {
 }
 
 /* line 18, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_mqueries.scss */
-.hide-for-small,
+.hide-for-small, #content img,
 .hide-for-medium,
 .hide-for-medium-down,
 .show-for-large,
@@ -4493,7 +4495,7 @@ div.progress.round .meter {
 /* Very large display targeting */
 @media only screen and (min-width: 1441px) {
   /* line 27, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_mqueries.scss */
-  .hide-for-small,
+  .hide-for-small, #content img,
   .hide-for-medium,
   .hide-for-medium-down,
   .hide-for-large,
@@ -4515,7 +4517,7 @@ div.progress.round .meter {
 /* Medium display targeting */
 @media only screen and (max-width: 1279px) and (min-width: 768px) {
   /* line 44, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_mqueries.scss */
-  .hide-for-small,
+  .hide-for-small, #content img,
   .show-for-medium,
   .show-for-medium-down,
   .hide-for-large,
@@ -4547,7 +4549,7 @@ div.progress.round .meter {
   }
 
   /* line 68, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_mqueries.scss */
-  .hide-for-small,
+  .hide-for-small, #content img,
   .show-for-medium,
   .hide-for-medium-down,
   .show-for-large,
@@ -5192,37 +5194,47 @@ table.hide-for-medium {
   }
 
   /* line 247, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_mqueries.scss */
-  input[type="text"].six, .row input[type="text"].six, .pagerow input[type="text"].six,
+  input[type="text"].six, .row input[type="text"].six, .pagerow input[type="text"].six, #content input[type="text"].sixWithLeftBorder,
   input[type="password"].six,
   .row input[type="password"].six,
   .pagerow input[type="password"].six,
+  #content input[type="password"].sixWithLeftBorder,
   input[type="date"].six,
   .row input[type="date"].six,
   .pagerow input[type="date"].six,
+  #content input[type="date"].sixWithLeftBorder,
   input[type="datetime"].six,
   .row input[type="datetime"].six,
   .pagerow input[type="datetime"].six,
+  #content input[type="datetime"].sixWithLeftBorder,
   input[type="email"].six,
   .row input[type="email"].six,
   .pagerow input[type="email"].six,
+  #content input[type="email"].sixWithLeftBorder,
   input[type="number"].six,
   .row input[type="number"].six,
   .pagerow input[type="number"].six,
+  #content input[type="number"].sixWithLeftBorder,
   input[type="search"].six,
   .row input[type="search"].six,
   .pagerow input[type="search"].six,
+  #content input[type="search"].sixWithLeftBorder,
   input[type="tel"].six,
   .row input[type="tel"].six,
   .pagerow input[type="tel"].six,
+  #content input[type="tel"].sixWithLeftBorder,
   input[type="time"].six,
   .row input[type="time"].six,
   .pagerow input[type="time"].six,
+  #content input[type="time"].sixWithLeftBorder,
   input[type="url"].six,
   .row input[type="url"].six,
   .pagerow input[type="url"].six,
+  #content input[type="url"].sixWithLeftBorder,
   textarea.six,
   .row textarea.six,
-  .pagerow textarea.six {
+  .pagerow textarea.six,
+  #content textarea.sixWithLeftBorder {
     width: 100% !important;
   }
 
@@ -6058,40 +6070,68 @@ table.hide-for-medium {
   width: 100%;
 }
 
-/* line 57, ../sass/app.scss */
-#mainVideo {
-  text-align: center;
-  position: fixed;
-  background-clip: border-box;
-  background-color: #323232;
-  top: 0;
-  z-index: 0;
-}
-
 /* line 66, ../sass/app.scss */
 #page {
   position: relative;
-  margin-top: 720px;
-  background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.1) 1px, #f1f1f1 1px);
+  margin-top: 780px;
+  background-image: -webkit-radial-gradient(rgba(10, 10, 10, 0.1) 1.9px, #111111 1px);
+  background-image: radial-gradient(circle at center center, rgba(10, 10, 10, 0.1) 0%, #0a0a0a 20%);
   background-attachment: scroll;
   background-size: 8px 8px;
   background-z-index: 1;
   box-shadow: 0px 0px 10px #f1f1f1;
   z-index: 2;
+  color: #ddd;
+  padding-top: 40px;
 }
 
-/* line 78, ../sass/app.scss */
-#title {
-  margin-bottom: 30px;
-}
 /* line 81, ../sass/app.scss */
-#title #head {
-  width: 90px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#content {
+  font-family: "Futura Condensed Medium", Futura, Arial, serif;
+  text-transform: uppercase;
 }
-/* line 88, ../sass/app.scss */
+/* line 86, ../sass/app.scss */
+#content img {
+  position: absolute;
+  width: 95%;
+  text-align: center;
+}
+/* line 93, ../sass/app.scss */
+#content #wireframe {
+  width: 60%;
+  margin-top: 20px;
+}
+/* line 97, ../sass/app.scss */
+#content #plain, #content #color {
+  width: 45%;
+  margin-top: 280px;
+}
+/* line 101, ../sass/app.scss */
+#content #color {
+  margin-left: 50%;
+}
+/* line 103, ../sass/app.scss */
+#content .sixWithLeftBorder {
+  border-left-color: #969;
+  border-left-style: solid;
+  border-left-width: 6px;
+  border-bottom-color: #969;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+
+/* line 114, ../sass/app.scss */
+h1, h2, h3, #preorder ul li, h4, h5 {
+  font-family: "Futura Condensed Medium", Futura, Arial, serif;
+  color: #eee;
+}
+
+/* line 119, ../sass/app.scss */
+#title {
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+/* line 130, ../sass/app.scss */
 #title #right {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -6101,27 +6141,82 @@ table.hide-for-medium {
   -ms-filter: "FlipH";
 }
 
-/* line 99, ../sass/app.scss */
+/* line 140, ../sass/app.scss */
+#preorder {
+  padding-bottom: 20px;
+}
+/* line 144, ../sass/app.scss */
+#preorder #preorderItem {
+  color: #ff3333;
+}
+/* line 148, ../sass/app.scss */
+#preorder ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+/* line 153, ../sass/app.scss */
+#preorder ul li {
+  text-align: left;
+  white-space: nowrap;
+  padding-top: 30px;
+}
+
+/* line 161, ../sass/app.scss */
+#social {
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 166, ../sass/app.scss */
+#social ul {
+  list-style-type: none;
+}
+/* line 170, ../sass/app.scss */
+#social ul li {
+  text-align: left;
+  white-space: nowrap;
+  margin-left: 20px;
+  display: inline;
+  font-size: 1.3em;
+}
+
+/* line 180, ../sass/app.scss */
+#tourDates {
+  margin-left: 30px;
+}
+/* line 184, ../sass/app.scss */
 #tourDates .month {
   font-size: larger;
-  font-family: "Futura Medium", Futura, Arial, serif;
-  color: #111;
   text-align: left;
 }
-/* line 106, ../sass/app.scss */
+/* line 189, ../sass/app.scss */
 #tourDates ul {
   list-style-type: none;
 }
-/* line 110, ../sass/app.scss */
+/* line 193, ../sass/app.scss */
 #tourDates ul li {
   text-align: left;
   white-space: nowrap;
 }
-/* line 115, ../sass/app.scss */
+/* line 198, ../sass/app.scss */
 #tourDates .ticket {
   color: #ff3366;
 }
-/* line 119, ../sass/app.scss */
+/* line 202, ../sass/app.scss */
 #tourDates .ticket:hover {
   color: #cccccc;
+}
+
+/* line 208, ../sass/app.scss */
+#contact {
+  padding-bottom: 20px;
+}
+/* line 211, ../sass/app.scss */
+#contact ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+/* line 216, ../sass/app.scss */
+#contact ul li {
+  text-align: left;
+  white-space: nowrap;
 }
