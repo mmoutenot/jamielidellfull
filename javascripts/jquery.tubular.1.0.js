@@ -7,7 +7,7 @@
     // defaults
     var defaults = {
         ratio: 16/9, // usually either 4/3 or 16/9 -- tweak as needed
-        videoId: 'ZCAnLxRvNNc', // toy robot in space is a good default, no?
+        videoId: 'ZCAnLxRvNNc',
         mute: true,
         repeat: true,
         width: $(window).width(),
@@ -59,14 +59,15 @@
         window.onPlayerReady = function(e) {
             resize();
             if (options.mute) e.target.mute();
-            e.target.seekTo(options.start);
-            e.target.playVideo();
-
+            // uncomment following two lines to autoplay
+            // e.target.seekTo(options.start);
+            // e.target.playVideo();
         }
 
         window.onPlayerStateChange = function(state) {
             if (state.data === 0 && options.repeat) { // video ended and repeat option is set true
-                player.seekTo(options.start); // restart
+                // player.seekTo(options.start); // restart
+                player.playVideo();
             }
         }
 
@@ -95,7 +96,9 @@
             resize();
         })
 
-        $('body').on('click','.' + options.playButtonClass, function(e) { // play button
+        $('body').on('click','#' + options.playButtonClass, function(e) { // play button
+            console.log('play button clicked');
+            $('#videoDescription').hide();
             e.preventDefault();
             player.playVideo();
         }).on('click', '.' + options.pauseButtonClass, function(e) { // pause button
