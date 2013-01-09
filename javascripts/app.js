@@ -23,7 +23,7 @@ $(document).ready(function() {
   $('#page').css({'margin-top': (windowHeight-155) + 'px'});
   $('#mainVideo').tubular({videoId: '3wPK3VIeT8I', mute: false, repeat: true, playButtonClass: 'tubular-shield'});
   var refreshID = setInterval(function() {
-    if($('#page').css('margin-top') == (windowHeight-155) + 'px'){
+    if($(document).scrollTop() == 0){
       $('#page').animate({ 'margin-top' : (windowHeight-190) }, 400);
       $('#page').animate({ 'margin-top' : (windowHeight-145) }, 500);
       $('#page').animate({ 'margin-top' : (windowHeight-165) }, 600);
