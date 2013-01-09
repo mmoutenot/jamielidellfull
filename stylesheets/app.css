@@ -122,7 +122,7 @@ figure {
 
 /* Base Type Styles Using Modular Scale ---------------------- */
 /* line 3, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, #preorder ul li, h4, h5, h6, pre, form, p, blockquote, th, td {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, #preorder ul li, h5, h6, pre, form, p, blockquote, th, td {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -152,7 +152,7 @@ aside p {
 }
 
 /* line 15, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-h1, h2, h3, #preorder ul li, h4, h5, h6 {
+h1, h2, h3, h4, #preorder ul li, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -163,7 +163,7 @@ h1, h2, h3, #preorder ul li, h4, h5, h6 {
   margin-top: 14px;
 }
 /* line 24, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-h1 small, h2 small, h3 small, #preorder ul li small, h4 small, h5 small, h6 small {
+h1 small, h2 small, h3 small, h4 small, #preorder ul li small, h5 small, h6 small {
   font-size: 60%;
   color: #6f6f6f;
   line-height: 0;
@@ -180,12 +180,12 @@ h2 {
 }
 
 /* line 29, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-h3, #preorder ul li {
+h3 {
   font-size: 27px;
 }
 
 /* line 30, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-h4 {
+h4, #preorder ul li {
   font-size: 23px;
 }
 
@@ -414,13 +414,13 @@ abbr {
 }
 
   /* line 98, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-  p, h2, h3, #preorder ul li {
+  p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
   /* line 99, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/common/_typography.scss */
-  h2, h3, #preorder ul li {
+  h2, h3 {
     page-break-after: avoid;
   }
 
@@ -3084,9 +3084,9 @@ div.orbit, div.orbit-wrapper {
 .joyride-tip-guide h1,
 .joyride-tip-guide h2,
 .joyride-tip-guide h3,
+.joyride-tip-guide h4,
 .joyride-tip-guide #preorder ul li,
 #preorder ul .joyride-tip-guide li,
-.joyride-tip-guide h4,
 .joyride-tip-guide h5,
 .joyride-tip-guide h6 {
   line-height: 1.25;
@@ -3921,7 +3921,7 @@ ul.accordion > li > div.title {
   transition: 0.15s background linear;
 }
 /* line 106, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_ui.scss */
-ul.accordion > li > div.title h1, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, #preorder ul.accordion > li > div.title li, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5 {
+ul.accordion > li > div.title h1, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title h4, #preorder ul.accordion > li > div.title li, ul.accordion > li > div.title h5 {
   margin: 0;
 }
 /* line 107, ../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_ui.scss */
@@ -6071,6 +6071,19 @@ table.hide-for-medium {
 }
 
 /* line 66, ../sass/app.scss */
+#videoDescription {
+  position: fixed;
+  top: 50%;
+  margin-top: -2em;
+  left: 50%;
+  margin-left: -300px;
+  font-family: "Futura Condensed Medium", Futura, Arial, serif;
+  text-transform: uppercase;
+  text-shadow: black 0.05em 0.05em 0.05em;
+  z-index: 2;
+}
+
+/* line 78, ../sass/app.scss */
 #page {
   position: relative;
   margin-top: 780px;
@@ -6080,39 +6093,39 @@ table.hide-for-medium {
   background-size: 8px 8px;
   background-z-index: 1;
   box-shadow: 0px 0px 10px #f1f1f1;
-  z-index: 2;
+  z-index: 3;
   color: #ddd;
   padding-top: 40px;
 }
 
-/* line 81, ../sass/app.scss */
+/* line 93, ../sass/app.scss */
 #content {
   font-family: "Futura Condensed Medium", Futura, Arial, serif;
   text-transform: uppercase;
   text-shadow: black 0.1em 0.1em 0.1em;
 }
-/* line 87, ../sass/app.scss */
+/* line 99, ../sass/app.scss */
 #content img {
   position: absolute;
   width: 95%;
   text-align: center;
 }
-/* line 94, ../sass/app.scss */
+/* line 106, ../sass/app.scss */
 #content #wireframe {
   width: 60%;
   margin-top: 20px;
   margin-left: 80px;
 }
-/* line 99, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 #content #plain, #content #color {
   width: 45%;
   margin-top: 280px;
 }
-/* line 103, ../sass/app.scss */
+/* line 115, ../sass/app.scss */
 #content #color {
   margin-left: 50%;
 }
-/* line 105, ../sass/app.scss */
+/* line 117, ../sass/app.scss */
 #content .sixWithLeftBorder {
   border-left-color: #969;
   border-left-style: solid;
@@ -6122,18 +6135,18 @@ table.hide-for-medium {
   border-bottom-width: 6px;
 }
 
-/* line 116, ../sass/app.scss */
-h1, h2, h3, #preorder ul li, h4, h5 {
+/* line 128, ../sass/app.scss */
+h1, h2, h3, h4, #preorder ul li, h5 {
   font-family: "Futura Condensed Medium", Futura, Arial, serif;
   color: #eee;
 }
 
-/* line 121, ../sass/app.scss */
+/* line 133, ../sass/app.scss */
 #title {
   margin-bottom: 40px;
   cursor: pointer;
 }
-/* line 132, ../sass/app.scss */
+/* line 144, ../sass/app.scss */
 #title #right {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -6143,36 +6156,39 @@ h1, h2, h3, #preorder ul li, h4, h5 {
   -ms-filter: "FlipH";
 }
 
-/* line 142, ../sass/app.scss */
+/* line 154, ../sass/app.scss */
 #preorder {
   padding-bottom: 20px;
 }
-/* line 146, ../sass/app.scss */
+/* line 158, ../sass/app.scss */
 #preorder #preorderItem {
   color: #ff3333;
 }
-/* line 150, ../sass/app.scss */
+/* line 162, ../sass/app.scss */
 #preorder ul {
   list-style-type: none;
   margin-left: 20px;
 }
-/* line 155, ../sass/app.scss */
+/* line 167, ../sass/app.scss */
 #preorder ul li {
-  text-align: left;
   white-space: nowrap;
   padding-top: 30px;
 }
+/* line 173, ../sass/app.scss */
+#preorder h3 {
+  text-align: center;
+}
 
-/* line 163, ../sass/app.scss */
+/* line 179, ../sass/app.scss */
 #social {
   margin-top: 20px;
   text-align: center;
 }
-/* line 168, ../sass/app.scss */
+/* line 184, ../sass/app.scss */
 #social ul {
   list-style-type: none;
 }
-/* line 172, ../sass/app.scss */
+/* line 188, ../sass/app.scss */
 #social ul li {
   text-align: left;
   white-space: nowrap;
@@ -6181,43 +6197,43 @@ h1, h2, h3, #preorder ul li, h4, h5 {
   font-size: 1.3em;
 }
 
-/* line 182, ../sass/app.scss */
+/* line 198, ../sass/app.scss */
 #tourDates {
   margin-left: 30px;
 }
-/* line 185, ../sass/app.scss */
+/* line 201, ../sass/app.scss */
 #tourDates .month {
   font-size: larger;
   text-align: left;
 }
-/* line 190, ../sass/app.scss */
+/* line 206, ../sass/app.scss */
 #tourDates ul {
   list-style-type: none;
 }
-/* line 194, ../sass/app.scss */
+/* line 210, ../sass/app.scss */
 #tourDates ul li {
   text-align: left;
   white-space: nowrap;
 }
-/* line 200, ../sass/app.scss */
+/* line 216, ../sass/app.scss */
 #tourDates .ticket {
   color: #ff3366;
 }
-/* line 204, ../sass/app.scss */
+/* line 220, ../sass/app.scss */
 #tourDates .ticket:hover {
   color: #cccccc;
 }
 
-/* line 210, ../sass/app.scss */
+/* line 226, ../sass/app.scss */
 #contact {
   padding-bottom: 20px;
 }
-/* line 213, ../sass/app.scss */
+/* line 229, ../sass/app.scss */
 #contact ul {
   list-style-type: none;
   margin-left: 20px;
 }
-/* line 218, ../sass/app.scss */
+/* line 234, ../sass/app.scss */
 #contact ul li {
   text-align: left;
   white-space: nowrap;
