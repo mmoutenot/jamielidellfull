@@ -63,6 +63,18 @@
   // z-index: 0;
 }
 
+#videoDescription {
+  position:fixed;
+  top:50%;
+  margin-top:-2em;
+  left:50%;
+  margin-left:-300px;
+  font-family:"Futura Condensed Medium", Futura, Arial, serif;
+  text-transform:uppercase;
+  text-shadow: black 0.05em 0.05em 0.05em;
+  z-index:2;
+}
+
 #page {
   position:relative;
   margin-top:780px;
@@ -73,7 +85,7 @@
   background-size:8px 8px;
   background-z-index:1;
   box-shadow:0px 0px 10px #f1f1f1;
-  z-index:2;
+  z-index:3;
   color:#ddd;
   padding-top:40px;
 }
@@ -153,11 +165,15 @@ h1, h2, h3, h4, h5 {
   }
 
   ul li{
-    @extend h3;
-    text-align:left;
+    @extend h4;
     white-space:nowrap;
     padding-top:30px;
   }
+
+  h3 {
+    text-align: center;
+  }
+
 }
 
 #social {
