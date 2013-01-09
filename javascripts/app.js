@@ -21,7 +21,18 @@ $(document).ready(function() {
   var windowHeight = $(window).height();
   console.log(windowHeight);
   $('#page').css({'margin-top': (windowHeight-155) + 'px'});
-  $('#mainVideo').tubular({videoId: '3wPK3VIeT8I', mute: false, repeat: true});// where idOfYourVideo is the YouTube ID.
+  $('#mainVideo').tubular({videoId: '3wPK3VIeT8I', mute: false, repeat: true, playButtonClass: 'tubular-shield'});
+  var refreshID = setInterval(function() {
+    if($('#page').css('margin-top') == (windowHeight-155) + 'px'){
+      $('#page').animate({ 'margin-top' : (windowHeight-190) }, 400);
+      $('#page').animate({ 'margin-top' : (windowHeight-145) }, 500);
+      $('#page').animate({ 'margin-top' : (windowHeight-165) }, 600);
+      $('#page').animate({ 'margin-top' : (windowHeight-153) }, 700);
+      $('#page').animate({ 'margin-top' : (windowHeight-157) }, 800);
+      $('#page').animate({ 'margin-top' : (windowHeight-155) }, 900);
+    }
+  }, 10000);
+
 });
 
 $(function() {
