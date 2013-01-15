@@ -19,13 +19,15 @@
       <script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
     </head>
     <body>
-
-      <div class="pagerow" id="video">
+      <div class="pagerow hide-for-small" id="video">
         <div id="mainVideo"></div>
-        <h1 id="videoDescription">Upcoming video etc etc</h1>
+        <div id="videoDescription">
+          <h1 style="text-align:center">WHY_YA_WHY</h1>
+          <h3>(NEW SONG FROM "JAMIE LIDELL" AVAILABLE FEB 18)</h3>
+        </div>
       </div>
 
-      <div id="page">
+      <div id="page" class="hide-for-small">
 
         <div class="row" id="title">
           <div class="five columns center">
@@ -63,15 +65,16 @@
 
           <div class="row">
             <div class="six columns">
-              <img id="wireframe" src="images/wireframeSmaller.gif">
+              <img id="wireframe" src="images/stripes.gif">
             </div>
             <div class="sixWithLeftBorder columns end">
               <div id="social">
                 <ul>
                   <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://jamielidell.com">Facebook</a></li>
                   <li><a href="https://twitter.com/intent/tweet?text=New+%40Jamie_Lidell+album+announced+on+%40WarpRecords+http%3A%2F%2Fjamielidell.com">Twitter</a></li>
-                  <li>Instagram</li>
-                  <li>Youtube</li>
+                  <li><a href="http://jamielidell.tumblr.com/">Tumblr</a></li>
+                  <li><a href="http://jamielidell.tumblr.com/">Instagram - @jamie_lidell</li>
+                  <li><a href="http://www.youtube.com/user/jamielidell?feature=mhee">Youtube</a></li>
                 </ul>
               </div>
             </div>
@@ -121,9 +124,11 @@
 
           <div class="row">
             <div class="six columns">
-              <iframe width="560" height="315" src="http://www.youtube.com/embed/3wPK3VIeT8I" frameborder="0" allowfullscreen></iframe>
+              <iframe class="youtube" width="560" height="315" src="http://www.youtube.com/embed/mNY5jJv57MQ" frameborder="0" allowfullscreen></iframe>
               <br> <br> <br>
-              <iframe width="560" height="315" src="http://www.youtube.com/embed/WQxGnSqxTyA" frameborder="0" allowfullscreen></iframe>
+              <iframe class="youtube" width="560" height="315" src="http://www.youtube.com/embed/3wPK3VIeT8I" frameborder="0" allowfullscreen></iframe>
+              <br> <br> <br>
+              <iframe class="youtube" width="560" height="315" src="http://www.youtube.com/embed/WQxGnSqxTyA" frameborder="0" allowfullscreen></iframe>
               <br> <br> <br>
             </div>
             <div class="sixWithLeftBorder columns end">
@@ -132,22 +137,36 @@
                 <br>
                 <ul>
                   <li>Booking:</li>
-                  <li>North/South America - <a href="http://www.windishagency.com/">Windish Agency</a></li>
-                  <li>Europe - <a href="http://www.primarytalent.com/">Primary Talent</a></li>
-                  <br>
+                  <ul>
+                    <li>North/South America</li>
+                    <li><a href="http://www.windishagency.com/artists/jamie_lidell">Windish Agency</a></li>
+                    <li><a href="mailto:tom@windishagency.com">Tom Windish</a></li>
+                  </ul>
+                  <ul>
+                    <li>Europe</li>
+                    <li><a href="http://www.primarytalent.com/">Primary Talent</a></li>
+                    <li><a href="mailto:peter_elliott@primarytalent.com">Peter Elliot</a> & <a href="nathalie@primarytalent.com">Nathalie Blue</a>
+                  </ul>
                   <li>Management:</li>
-                  <li><a href="mailto:lindsey@jamielidell.com">lindsey@jamielidell.com</a></li>
+                  <li><a href="mailto:lindsey@jamielidell.com">Lindsey Rome</a></li>
                   <br>
                   <li>Record Label:</li>
-                  <li><a href="http://warprecords.com">Warp Records</a></li>
+                  <li><a href="http://warp.net/records/jamie-lidell">Warp Records</a></li>
                   <li><a href="mailto:info@warprecords.com">info@warprecords.com</a></li>
                   <br>
                   <li>Press:</li>
-                  <li>North America - <a href="http://sacksco.com/">Sacks and Co</a></li>
-                  <li>UK - <a href="http://www.insideslashout.com/">Inside/Out Adrian Reed</a></li>
-                  <br>
+                  <ul>
+                    <li>North America</li>
+                    <li><a href="http://sacksco.com/">Sacks and Co</a></li>
+                    <li><a href="mailto:krista@sacksco.com">Krista Williams</a></li>
+                  </ul>
+                  <ul>
+                    <li>UK</li>
+                    <li><a href="http://www.insideslashout.com/">Inside/Out Adrian Reed</a></li>
+                    <li><a href="mailto:adrian@insideslashout.com">Adrian Reed</a></li>
+                  </ul>
                   <li>Legal:</li>
-                  <li>Gary Mandel</li>
+                  <li><a href="mailto:gary@ssb.co.uk">Gary Mandel</a></li>
                   <br>
                   <li>Website:</li>
                   <li><a href="http://pewpewlasers.com">Marshall Moutenot</a></li>
@@ -159,6 +178,140 @@
 
         </div>
 
+      </div>
+
+      <div id="page-mobile" class="show-for-small">
+
+        <div id="content">
+
+          <div class="row">
+            <div class="six columns">
+              <div id="albumcover"> </div>
+            </div>
+            <div class="sixWithLeftBorder columns end">
+              <div id="preorder">
+                <h3>New Album Jamie Lidell Available Feb 18</h3>
+                <ul>
+                  <li id="preorderItem">Preorder</li>
+                  <li><a href="http://glnk.it/1rk">iTunes</a></li>
+                  <li><a href="http://glnk.it/1rl">Bleep</a></li>
+                  <li><a href="http://glnk.it/1ss">Amazon (CD)</a></li>
+                  <li><a href="http://glnk.it/1st">Amazon (LP)</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="six columns"> </div>
+            <div class="sixWithLeftBorder columns end">
+              <div id="social">
+                <ul>
+                  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://jamielidell.com">Facebook</a></li>
+                  <li><a href="https://twitter.com/intent/tweet?text=New+%40Jamie_Lidell+album+announced+on+%40WarpRecords+http%3A%2F%2Fjamielidell.com">Twitter</a></li>
+                  <li><a href="http://jamielidell.tumblr.com/">Tumblr</a></li>
+                  <li><a href="http://jamielidell.tumblr.com/">Instagram - @jamie_lidell</li>
+                  <li><a href="http://www.youtube.com/user/jamielidell?feature=mhee">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="six columns"> </div>
+            <div class="sixWithLeftBorder columns end">
+              <div id="tourDates-mobile">
+                <h3>Live Dates</h3>
+                <div class="month">March</div>
+                <ul>
+                  <li>08 London, EN, Heaven <a class="ticket" href="http://www.artistticket.com/link/?s=Jamie+Lidell">Tickets</a></li>
+                  <li>13 Amsterdam, ND, Paradiso <a class="ticket" href="http://www.ticketmaster.nl/event/105547">Tickets</a></li>
+                  <li>15 Paris, FR, Gaite Lyrique <a class="ticket" href="http://www.digitick.com/place-de-concert-jamie-lidell-css4-digitick-pg3189-ai9584.html">Tickets</a></li>
+                  <li>16 Cologne, DE, Stollwerk <a class="ticket" href="http://www.eventim.de">Tickets</a></li>
+                  <li>17 Brussells, BE, AB <a class="ticket" href="http://www.abconcerts.be/en/concerts/p/detail/jamie-lidell-17-03-2013">Tickets</a></li>
+                  <li>19 Hamburg, DE, Gruenspan <a class="ticket" href="http://www.eventim.de">Tickets</a></li>
+                  <li>20 Berlin, DE, Kesselhaus <a class="ticket" href="http://www.eventim.de">Tickets</a></li>
+                  <li>21 Munich, DE, Ampere <a class="ticket" href="http://www.eventim.de">Tickets</a></li>
+                  <li>22 Zurich, CH, M4 Music <a class="ticket" href="http://www.starticket.ch ">Tickets</a></li>
+                  <li>23 Instanbul, TR, Salon Iksv <a class="ticket" href="http://www.biletix.com">Tickets</a></li>
+                  <li>28 Las Angeles, CA, Echoplex <a class="ticket" href="http://tinyurl.com/cwrgarh">Tickets</a></li>
+                  <li>29 San Francisco, CA, The Independent <a class="ticket" href="http://tinyurl.com/cqc7tj4">Tickets</a></li>
+                  <li>30 Portland, OR, Doug Fir Lounge <a class="ticket" href="http://tinyurl.com/cxswnex">Tickets</a></li>
+                </ul>
+                <div class="month">April</div>
+                <ul>
+                  <li>01 Seattle, WA, Neumos <a class="ticket" href="http://tinyurl.com/cvw687d">Tickets</a></li>
+                  <li>02 Vancouver, BC, Fortune Sound Club <a class="ticket" href="http://tinyurl.com/bhz5uza">Tickets</a></li>
+                  <li>05 Minneapolis, MN, Fine Line Music Cafe <a class="ticket" href="http://tinyurl.com/amlb4lk">Tickets</a></li>
+                  <li>06 Chicago, IL, Lincoln Hall <a class="ticket" href="http://tinyurl.com/d67n8nt">Tickets</a></li>
+                  <li>07 Grand Rapids, MI, They Pyramid Scheme <a class="ticket" href="http://tktwb.tw/TPPOVQ">Tickets</a></li>
+                  <li>08 Toronto, ON, Lee's Palace <a class="ticket" href="http://tinyurl.com/adkcsj7">Tickets</a></li>
+                  <li>10 Burlington, VT, Signal Kitchen <a class="ticket" href="http://tinyurl.com/cjd3od9">Tickets</a></li>
+                  <li>11 Boston, MA, Brighton Music Hall <a class="ticket" href="http://tinyurl.com/br6ry8t">Tickets</a></li>
+                  <li>12 Washington, DC, Rock N Roll Hotel <a class="ticket" href="http://tinyurl.com/bpurjwh">Tickets</a></li>
+                  <li>13 Brooklyn, NY, Music Hall of Williamsburg <a class="ticket" href="http://tinyurl.com/cxgwjux">Tickets</a></li>
+                  <li>14 Philadelphia, PA, Union Transfer <a class="ticket" href="http://tinyurl.com/d9sf2oz">Tickets</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="six columns"> </div>
+            <div class="sixWithLeftBorder columns end">
+              <div id="contact">
+                <h4>Contact</h4>
+                <br>
+                <ul>
+                  <li>Booking:</li>
+                  <ul>
+                    <li>North/South America</li>
+                    <li><a href="http://www.windishagency.com/artists/jamie_lidell">Windish Agency</a></li>
+                    <li><a href="mailto:tom@windishagency.com">Tom Windish</a></li>
+                  </ul>
+                  <ul>
+                    <li>Europe</li>
+                    <li><a href="http://www.primarytalent.com/">Primary Talent</a></li>
+                    <li><a href="mailto:peter_elliott@primarytalent.com">Peter Elliot</a> & <a href="nathalie@primarytalent.com">Nathalie Blue</a>
+                  </ul>
+                  <li>Management:</li>
+                  <li><a href="mailto:lindsey@jamielidell.com">Lindsey Rome</a></li>
+                  <br>
+                  <li>Record Label:</li>
+                  <li><a href="http://warp.net/records/jamie-lidell">Warp Records</a></li>
+                  <li><a href="mailto:info@warprecords.com">info@warprecords.com</a></li>
+                  <br>
+                  <li>Press:</li>
+                  <ul>
+                    <li>North America</li>
+                    <li><a href="http://sacksco.com/">Sacks and Co</a></li>
+                    <li><a href="mailto:krista@sacksco.com">Krista Williams</a></li>
+                  </ul>
+                  <ul>
+                    <li>UK</li>
+                    <li><a href="http://www.insideslashout.com/">Inside/Out Adrian Reed</a></li>
+                    <li><a href="mailto:adrian@insideslashout.com">Adrian Reed</a></li>
+                  </ul>
+                  <li>Legal:</li>
+                  <li><a href="mailto:gary@ssb.co.uk">Gary Mandel</a></li>
+                  <br>
+                  <li>Website:</li>
+                  <li><a href="http://pewpewlasers.com">Marshall Moutenot</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="six columns"></div>
+            <div class="sixWithLeftBorder columns end">
+              <iframe width="280" height="158" src="http://www.youtube.com/embed/mNY5jJv57MQ" frameborder="0" allowfullscreen></iframe>
+              <br> <br> <br>
+              <iframe width="280" height="158" src="http://www.youtube.com/embed/3wPK3VIeT8I" frameborder="0" allowfullscreen></iframe>
+              <br> <br> <br>
+              <iframe width="280" height="158" src="http://www.youtube.com/embed/WQxGnSqxTyA" frameborder="0" allowfullscreen></iframe>
+              <br> <br> <br>
+            </div>
+          </div>
       </div>
 
       <!-- Included JS Files (Uncompressed) -->
@@ -207,5 +360,20 @@
       <!-- Application Javascript, safe to override -->
       <script src="javascripts/foundation/app.js"></script>
       <script src="javascripts/app.js"></script>
+
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-37689010-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+
+       </script>
+
     </body>
   </html>

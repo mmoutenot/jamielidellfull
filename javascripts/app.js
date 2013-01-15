@@ -21,7 +21,9 @@ $(document).ready(function() {
   var windowHeight = $(window).height();
   console.log(windowHeight);
   $('#page').css({'margin-top': (windowHeight-155) + 'px'});
-  $('#mainVideo').tubular({videoId: '3wPK3VIeT8I', mute: false, repeat: true, playButtonClass: 'tubular-shield'});
+  $('#mainVideo').tubular({videoId: 'mNY5jJv57MQ', mute: false, repeat: true, playButtonClass: 'tubular-shield'});
+
+  var viewOnYoutubeHidden = false;
   var refreshID = setInterval(function() {
     if($(document).scrollTop() == 0){
       $('#page').animate({ 'margin-top' : (windowHeight-190) }, 400);
@@ -30,6 +32,11 @@ $(document).ready(function() {
       $('#page').animate({ 'margin-top' : (windowHeight-153) }, 700);
       $('#page').animate({ 'margin-top' : (windowHeight-157) }, 800);
       $('#page').animate({ 'margin-top' : (windowHeight-155) }, 900);
+      if (viewOnYoutubeHidden){
+        $('#view-on-youtube-tab').animate({'top':'0px'}, 1000);
+      }
+    } else if (!viewOnYoutubeHidden) {
+      $('#view-on-youtube-tab').animate({'top':'-100px'}, 1000);
     }
   }, 10000);
 
@@ -38,10 +45,10 @@ $(document).ready(function() {
 $(function() {
 
   // Find all YouTube videos
-  var $allVideos = $("iframe[src^='http://www.youtube.com']"),
+  var $allVideos = $(".youtube"),
 
   // The element that is fluid width
-  $fluidEl = $(".six");
+  $fluidEl = $(".sixWithLeftBorder");
 
   // Figure out and save aspect ratio for each video
   $allVideos.each(function() {
@@ -75,6 +82,7 @@ $(function() {
   }).resize();
 
 })
+
 
 $(document).ready(function(){
   var hue_val = 0;
