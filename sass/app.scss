@@ -54,13 +54,19 @@
   width:100%;
 }
 
+body {
+  background-color:#000;
+}
+
 #mainVideo {
-  // text-align:center;
-  // position:fixed;
-  // background-clip: border-box;
-  // background-color: #000;
-  // top: 0;
-  // z-index: 0;
+  text-align:center;
+  position:fixed;
+  background-clip: border-box;
+  background-color: #000;
+  top: 0;
+  z-index: 0;
+  height:100%;
+  width:100%;
 }
 
 #view-on-youtube-tab {

@@ -6070,7 +6070,24 @@ table.hide-for-medium {
   width: 100%;
 }
 
-/* line 66, ../sass/app.scss */
+/* line 57, ../sass/app.scss */
+body {
+  background-color: #000;
+}
+
+/* line 62, ../sass/app.scss */
+#mainVideo {
+  text-align: center;
+  position: fixed;
+  background-clip: border-box;
+  background-color: #000;
+  top: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 73, ../sass/app.scss */
 #view-on-youtube-tab {
   text-transform: uppercase;
   font-family: "Futura Condensed Medium", Futura, Arial, serif;
@@ -6087,7 +6104,7 @@ table.hide-for-medium {
   z-index: 1000;
 }
 
-/* line 82, ../sass/app.scss */
+/* line 89, ../sass/app.scss */
 #videoDescription {
   position: fixed;
   top: 36%;
@@ -6100,7 +6117,7 @@ table.hide-for-medium {
   z-index: 2;
 }
 
-/* line 94, ../sass/app.scss */
+/* line 101, ../sass/app.scss */
 #page {
   position: relative;
   margin-top: 780px;
@@ -6115,40 +6132,40 @@ table.hide-for-medium {
   padding-top: 40px;
 }
 
-/* line 109, ../sass/app.scss */
+/* line 116, ../sass/app.scss */
 #page-mobile {
   background-color: #1a1a1a;
   color: #ddd;
 }
 
-/* line 114, ../sass/app.scss */
+/* line 121, ../sass/app.scss */
 #content {
   font-family: "Futura Condensed Medium", Futura, Arial, serif;
   text-transform: uppercase;
   text-shadow: black 0.1em 0.1em 0.1em;
 }
-/* line 120, ../sass/app.scss */
+/* line 127, ../sass/app.scss */
 #content img {
   position: absolute;
   width: 95%;
   text-align: center;
 }
-/* line 127, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 #content #wireframe {
   width: 60%;
   margin-top: 40px;
   margin-left: 80px;
 }
-/* line 132, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 #content #plain, #content #color {
   width: 45%;
   margin-top: 280px;
 }
-/* line 136, ../sass/app.scss */
+/* line 143, ../sass/app.scss */
 #content #color {
   margin-left: 50%;
 }
-/* line 138, ../sass/app.scss */
+/* line 145, ../sass/app.scss */
 #content .sixWithLeftBorder {
   border-left-color: #969;
   border-left-style: solid;
@@ -6158,18 +6175,18 @@ table.hide-for-medium {
   border-bottom-width: 6px;
 }
 
-/* line 149, ../sass/app.scss */
+/* line 156, ../sass/app.scss */
 h1, h2, h3, h4, #preorder ul li, h5 {
   font-family: "Futura Condensed Medium", Futura, Arial, serif;
   color: #eee;
 }
 
-/* line 154, ../sass/app.scss */
+/* line 161, ../sass/app.scss */
 #title {
   margin-bottom: 40px;
   cursor: pointer;
 }
-/* line 165, ../sass/app.scss */
+/* line 172, ../sass/app.scss */
 #title #right {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -6179,39 +6196,39 @@ h1, h2, h3, h4, #preorder ul li, h5 {
   -ms-filter: "FlipH";
 }
 
-/* line 175, ../sass/app.scss */
+/* line 182, ../sass/app.scss */
 #preorder {
   padding-bottom: 20px;
 }
-/* line 179, ../sass/app.scss */
+/* line 186, ../sass/app.scss */
 #preorder #preorderItem {
   color: #ff3333;
 }
-/* line 183, ../sass/app.scss */
+/* line 190, ../sass/app.scss */
 #preorder ul {
   list-style-type: none;
   margin-left: 20px;
 }
-/* line 188, ../sass/app.scss */
+/* line 195, ../sass/app.scss */
 #preorder ul li {
   white-space: nowrap;
   padding-top: 30px;
 }
-/* line 194, ../sass/app.scss */
+/* line 201, ../sass/app.scss */
 #preorder h3 {
   text-align: center;
 }
 
-/* line 200, ../sass/app.scss */
+/* line 207, ../sass/app.scss */
 #social {
   margin-top: 20px;
   text-align: center;
 }
-/* line 205, ../sass/app.scss */
+/* line 212, ../sass/app.scss */
 #social ul {
   list-style-type: none;
 }
-/* line 209, ../sass/app.scss */
+/* line 216, ../sass/app.scss */
 #social ul li {
   text-align: left;
   white-space: nowrap;
@@ -6220,72 +6237,72 @@ h1, h2, h3, h4, #preorder ul li, h5 {
   font-size: 1.3em;
 }
 
-/* line 219, ../sass/app.scss */
+/* line 226, ../sass/app.scss */
 #tourDates {
   margin-left: 30px;
 }
-/* line 222, ../sass/app.scss */
+/* line 229, ../sass/app.scss */
 #tourDates .month {
   font-size: larger;
   text-align: left;
 }
-/* line 227, ../sass/app.scss */
+/* line 234, ../sass/app.scss */
 #tourDates ul {
   list-style-type: none;
 }
-/* line 231, ../sass/app.scss */
+/* line 238, ../sass/app.scss */
 #tourDates ul li {
   text-align: left;
   white-space: nowrap;
 }
-/* line 237, ../sass/app.scss */
+/* line 244, ../sass/app.scss */
 #tourDates .ticket {
   color: #ff3366;
 }
-/* line 241, ../sass/app.scss */
+/* line 248, ../sass/app.scss */
 #tourDates .ticket:hover {
   color: #cccccc;
 }
 
-/* line 247, ../sass/app.scss */
+/* line 254, ../sass/app.scss */
 #tourDates-mobile {
   margin-left: 30px;
 }
-/* line 249, ../sass/app.scss */
+/* line 256, ../sass/app.scss */
 #tourDates-mobile .month {
   font-size: larger;
   text-align: left;
 }
-/* line 254, ../sass/app.scss */
+/* line 261, ../sass/app.scss */
 #tourDates-mobile ul {
   list-style-type: none;
 }
-/* line 258, ../sass/app.scss */
+/* line 265, ../sass/app.scss */
 #tourDates-mobile ul li {
   font-size: 0.6em;
   text-align: left;
   white-space: nowrap;
 }
-/* line 265, ../sass/app.scss */
+/* line 272, ../sass/app.scss */
 #tourDates-mobile .ticket {
   font-size: 0.8em;
   color: #ff3366;
 }
-/* line 270, ../sass/app.scss */
+/* line 277, ../sass/app.scss */
 #tourDates-mobile .ticket:hover {
   color: #cccccc;
 }
 
-/* line 277, ../sass/app.scss */
+/* line 284, ../sass/app.scss */
 #contact {
   padding-bottom: 20px;
 }
-/* line 280, ../sass/app.scss */
+/* line 287, ../sass/app.scss */
 #contact ul {
   list-style-type: none;
   margin-left: 20px;
 }
-/* line 285, ../sass/app.scss */
+/* line 292, ../sass/app.scss */
 #contact ul li {
   text-align: left;
   white-space: nowrap;
