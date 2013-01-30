@@ -19,7 +19,6 @@ $('#title').click(function (){
 
 $(document).ready(function() {
   var windowHeight = $(window).height();
-  console.log(windowHeight);
   $('#page').css({'margin-top': (windowHeight-155) + 'px'});
   $('#mainVideo').css({'height': (windowHeight-155)});
   // $('#mainVideo').tubular({videoId: 'mNY5jJv57MQ', mute: false, repeat: true, playButtonClass: 'tubular-shield'});
@@ -106,8 +105,6 @@ $(function() {
     var windowHeight = $(window).height();
     var newMargin = ((windowHeight-this.height)/4);
     var marginBound = (windowHeight-155);
-    console.log(newMargin);
-    console.log(marginBound);
     $('#mainVideo').css({'margin-top': Math.min(newMargin,marginBound)});
 
   });
@@ -128,7 +125,6 @@ $(function() {
       .width(newWidth)
       .height(Math.min(newWidth * $el.data('aspectRatio'), heightBound));
       var newMargin = ((windowHeight-$('.youtubeMain').height())/4);
-      console.log(newMargin);
       $('#mainVideo').css({'margin-top': newMargin});
 
     });
